@@ -1,0 +1,56 @@
+Mini projet –  Groupe : Shadow Code – Equipe :1                              05/11/2024
+Mohamed Zaaram
+Santiago Gabarre Claveria
+Erwan Devaux
+Killian Gauchet 
+Equipement : 
+-Visual Studio Code 
+	Avec les extensions :
+		-Live share : Permet de code sur un même fichier en même temps
+		-Live server : Permet voir la page html en direct
+
+
+Nous avons répartie les taches de cette façon :
+
+Mohamed : Page contact
+-->Premier bloc : Un titre adapté a la page de contact
+-->Bloc suivant : Le formulaire de contact. Ce formulaire contient un champ pour le prenom de l'utilisateur, son nom, son adresse mail ainsi qu'un champ pour écrire son message.
+                  Et pour finir un bouton envoyer qui envoie tout les informations entrer par l'utilisateur (bouton fictif)
+-->Dernier bloc : Ce bloc correspond a la partie renseignement, elle contient une photo de l'IUT, l'adresse puis une image d'une carte avec la position de l'iut.
+
+
+Santiago : Présentation des Compétences
+Plusieurs parties, détaillant les compétences6 compétences avec les
+informations provenant du PN informatique.
+La page doit être découpé en 4 parties:
+	- Apprentissage critique: Une image et un texte 
+	- Evaluation : Un texte représentatif avec un tableaiu de coeff
+	- Détails de la SAE liée : Un texte représentatif (petit titre), avec un texte explicatif 
+	- ensemble des ressources qui interviennent dans la compétence : bloc avec code, nom, apprentissage critique et descriptif.
+Fin de page : lien pour revenir en haut de page. 
+Pour chaque compétence, une page différente.
+
+
+Erwan : Présentation BUT
+--> premier bloc : 
+    --> un texte explicatif des règles de passage pour le BUT
+    --> un tableau montrant les coefficients des ressources 
+--> blocs suivants : une image cliquable correspondant à une compétence, cette image envoiera l'utilisateur sur une page correspondant à la compétence voulue. 
+    --> pour chaque compétence, il y aura une liste des ressources associées à cette même compétence. 
+    --> les blocs pairs seront une même classe html, pareil pour les pages impairs étant donné qu'on doit alterné image à droite / gauche.Erwan : Présentation BUT
+--> premier bloc : 
+	--> un texte explicatif des règles de passage pour le BUT
+	--> un tableau montrant les coefficients des ressources 
+--> blocs suivants : une image cliquable correspondant à une compétence, cette image envoiera l'utilisateur sur une page correspondant à la compétence voulue. 
+	--> pour chaque compétence, il y aura une liste des ressources associées à cette même compétence. 
+	--> les blocs pairs seront une même classe html, pareil pour les pages impairs étant donné qu'on doit alterné image à droite / gauche. 
+
+Killian : Pable ge de garde + élément constants
+le header : ajouter les logos de l’iut de toulouse et de l’universiteé paul sabatier à gauche, et le logo du but informatique à droite. juste en dessous, intégrer un menu de navigation avec quatre sections (accueil, présentation du but, blocs de compétences et contact) qui renvoient aux pages correspondantes, sauf "blocs de compétences" qui sera un menu déroulant.
+le footer : intégrer un plan du site avec des liens vers toutes les pages, un lien vers la page rgpd de la cnil, ainsi que les noms de l’équipe de développement et des élèves qui ont travaillé sur le projet.
+concevoir la page d’accueil en respectant une structure précise :
+
+historique du but : placer une image et du texte basé sur wikipédia (avec un lien vers la source).
+iut informatique toulouse rangueil : ajouter une photo de l’iut (avec effet zoom au survol) qui mène vers son site officiel, et inclure un texte sur son historique et une liste de contacts.
+liste des compétences : afficher les différents blocs de compétences, chacun avec une image et une liste des compétences importantes.
+vie étudiante : mettre un texte introductif avec, à côté, une image cliquable qui mène vers des informations sur la restauration, le sport ou la culture.

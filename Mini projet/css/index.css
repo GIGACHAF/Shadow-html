@@ -1,0 +1,361 @@
+/* Page de Garde */
+/* Style général */
+/* Masque la case à cocher pour ne montrer que le label */
+
+#dark-mode-toggle {
+    display: none;
+}
+
+.dark-mode-label {
+    cursor: pointer;
+    padding: 5px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 0;
+    margin-right: 5em;
+    margin-top: 9.8em;
+}
+
+.dark-mode-label:hover {
+    background-color: #a10000; /* Variation de couleur au survol */
+}
+
+/* Styles du mode sombre appliqués quand le checkbox est coché */
+
+#dark-mode-toggle:checked ~ * {
+    transition: background-color 0.3s ease;
+    background-color: black;
+}
+#dark-mode-toggle:checked ~ .dark-mode-label {
+    transition: background-color 0.3s ease;
+    color: #000000;
+    background-color: rgb(196, 196, 196);
+}
+#dark-mode-toggle:checked ~ div > nav {
+    transition: background-color 0.3s ease;
+    color: white;
+    background-color: #1d1d1d;
+}
+#dark-mode-toggle:checked ~ div >footer {
+    transition: background-color 0.3s ease;
+    background-color: (59, 59, 59);
+}
+#dark-mode-toggle:checked ~ div >header {
+    transition: background-color 0.3s ease;
+    background-color: var(--primary-color);
+}
+#dark-mode-toggle:checked ~ div >* {
+    transition: background-color 0.3s ease;
+    background-color: rgb(59, 59, 59);
+}
+#dark-mode-toggle:checked ~ div >.container3 .section3,
+#dark-mode-toggle:checked ~ div >.container2 .section,
+#dark-mode-toggle:checked ~ div >.container .section {
+    transition: background-color 0.3s ease;
+    background-color: rgb(111, 110, 110);
+}
+
+#dark-mode-toggle:checked ~ div >div.container3 > div > div h1,
+#dark-mode-toggle:checked ~div >div.container2 > div > div > h1,
+#dark-mode-toggle:checked ~ div >div.container div div h1{
+    transition: background-color 0.3s ease;
+    color: whitesmoke;
+}
+#dark-mode-toggle:checked ~ div >div.container3 > div > div p,
+#dark-mode-toggle:checked ~div >div.container2 > div > div > p,
+#dark-mode-toggle:checked ~ div >div.container div div p{
+    color: whitesmoke;
+    transition: background-color 0.3s ease;
+}
+
+/* Palette de couleurs */
+:root {
+    --primary-color: #c20000; /* Rouge */
+    --secondary-color: #ffffff; /* Blanc */
+    --accent-color: #333333; /* Noir */
+    --hover-color: #b5b5b5; /* Gris clair */
+    --first-color:white;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+/* Header et Navigation */
+header {
+    background-color: var(--primary-color);
+    padding: 3em 0;
+    display: flex;
+    align-items: center;
+    height: 3em;
+}
+img.image_ecole{
+    height: 15em;
+}
+img.image_complexe{
+    height: 15em;
+}
+img.image_client{
+    height: 12em;
+}
+a img.image_logo{
+    margin-left: 2em;
+    height: 6em;
+}
+img.Logo_iut{
+    height:6em;
+    width: 15em;
+}
+a.logo{
+    margin-left: 10px;
+}
+a.departement-informatique{
+    margin-left: 5em;
+}
+a.tropgrand{
+    margin-left: 55em;
+    width: auto;
+}
+img.Departement{
+    height: 6em;
+}
+a.button{
+    cursor: pointer;
+}
+nav {
+    background-color: #3c4042;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    height: 59px;
+}
+
+ul.nav {
+    gap: 5em;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    margin: 0;
+    margin-left: 12em;
+    height: 59px;
+    width: 1236px;
+    justify-content: space-between;
+}
+
+li.Navigation {
+
+    position: relative; /* Permet de positionner le sous-menu par rapport à cet élément */
+    color: white;
+    text-transform: uppercase;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    height: 59px;
+    width: 5em;
+    cursor: pointer;
+}
+
+ul.deroulant {
+    list-style: none;
+    visibility: hidden;
+    position: absolute; /* Positionnement absolu pour le sous-menu */
+    top: 100%; /* Place le sous-menu juste en dessous de l'élément parent */
+    left: 0; /* Aligne le sous-menu à gauche de l'élément parent */
+    width: 100%; /* Le sous-menu aura la même largeur que l'élément parent */
+    background-color: #3c4042;
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 1; /* Pour s'assurer que le sous-menu est au-dessus des autres éléments */
+}
+
+/* Les éléments du sous-menu */
+li.ptitderoulant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    font-family: "Soleil", Arial, Tahoma, Verdana, Helvetica, sans-serif;
+    text-transform: lowercase;
+    font-size: medium;
+    background-color: #3c4042; /* Couleur du fond du sous-menu */
+}
+
+li.ptitderoulant a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+li.ptitderoulant:hover {
+    background-color: #373737; /* Couleur de fond lors du survol */
+}
+
+/* Affiche le sous-menu au survol du parent */
+li.Navigation:hover ul.deroulant {
+    visibility: visible;
+    transform: translateY(0); /* Transition fluide vers le bas */
+}
+
+li.Navigation a { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 100%;
+
+}
+
+li.Navigation a:link { 
+    color: white; 
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+li.Navigation a:visited { 
+    color: white; 
+    text-decoration: none; 
+}
+
+li.Navigation:hover {
+    background-color: rgb(93, 93, 93);
+}
+
+.ptitderoulant a {
+    color: var(--accent-color);
+}
+
+/* Containers */
+.container, .container2, .container3 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2em;
+}
+.container{
+    margin-top: 2em;
+}
+.container2{
+    padding-top: 0em;
+}
+.container3{
+    padding-top: 0;
+}
+/* Sections */
+.section, .section3 {
+    display: flex;
+    background-color: var(--secondary-color);
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5em;
+}
+
+.section img, .section3 img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.section img:hover, .section3 img:hover {
+    transform: scale(1.05);
+}
+
+/* Texte */
+.texte, .texte2, .texte3 {
+    margin-left: 2em;
+    color: var(--accent-color);
+}
+
+/* Améliorations typographiques */
+h1 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Animation au survol */
+a img {
+    transition: transform 0.3s ease;
+}
+
+a img:hover {
+    transform: scale(1.05);
+}
+footer {
+    margin-top: 2em ;
+    background-color: #2c3e50; /* Fond sombre */
+    color: #ecf0f1; /* Texte clair */
+    padding: 2em;
+    display: flex;
+    justify-content: space-between; /* Répartit les sections en trois colonnes */
+    align-items: center;
+    flex-wrap: wrap; /* Gère les petits écrans en plaçant les éléments sur plusieurs lignes */
+}
+
+footer .pages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .pages ul li {
+    margin-bottom: 0.5em;
+}
+
+footer .pages ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .pages ul li a:hover {
+    color: #3498db; /* Changement de couleur au survol */
+}
+
+footer .cnil-link h1 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+footer .cnil-link a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .cnil-link a:hover {
+    color: #3498db;
+}
+
+footer .team h4 {
+    margin: 0.2em 0; /* Espacement entre les noms */
+    font-weight: normal;
+}
+
+/* Fin page de Garde */
+
+/* Page de presentation */
+Erwan
+/* Fin de page de presentation  */
+
+/* Page de parcour */
+santiago
+/* Fin de page de parcour  */
+
+/* Page de Contact */
+Mohamed
+/* Fin de page de Contact  */
