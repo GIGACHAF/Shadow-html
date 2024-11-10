@@ -1,6 +1,6 @@
 FR-
 
-1-Cliquer sur <>Code n/
+1-Cliquer sur <>Code
 2-Télécharger le zip
 3-Extraire tout 
 4-Ouvrir avec code
