@@ -46,7 +46,7 @@
 }
 #dark-mode-toggle:checked ~ div >header {
     transition: background-color 0.3s ease;
-    background-color: #600000;
+    background-color:#600000;
 }
 #dark-mode-toggle:checked ~ div >* {
     transition: background-color 0.3s ease;
@@ -95,14 +95,60 @@ header {
     align-items: center;
     height: 3em;
 }
+
+body > div > div.container2 > div > a > img{
+    margin-left: 2em;
+    margin-right: 1em;
+    height: 15em;
+    width: 22em;
+}
+body > div > div.container > div > a > img.image_etat{
+    margin-left: 5.7em;
+    margin-right: 6.2em;
+}
+body > div > div.container3 > div:nth-child(1) > a > img{
+    margin-left: 2em;
+    margin-right: 1em;
+    height: 15em;
+    width: 22em;
+}
+body > div > div.container3 > div:nth-child(2) > a > img.image_etat{
+    margin-left: 6em;
+    margin-right:4.5em;
+    
+}
+body > div > div.container3 > div:nth-child(3) > a > img{
+    margin-left: 2em;
+    margin-right: 1em;
+    height: 15em;
+    width: 22em;
+}
+body > div > div.container3 > div:nth-child(4) > a > img{
+    margin-left: 2em;
+    height: 15em;
+    width: 22em;
+}
+body > div > div.container3 > div:nth-child(5) > a > img{
+    margin-left: 2.5em;
+    height: 15em;
+    width: 22em;
+}
+body > div > div.container3 > div:nth-child(6) > a > img{
+    margin-left: 2.5em;
+    height: 15em;
+    width: 22em;
+}
 img.image_ecole{
     height: 15em;
+    width: 22em;
 }
 img.image_complexe{
     height: 15em;
+    width: 22em;
 }
-img.image_client{
-    height: 12em;
+a img.image_client{
+    height: 15em;
+    width: 22em;
 }
 a img.image_logo{
     margin-left: 2em;
@@ -112,6 +158,11 @@ img.Logo_iut{
     height:6em;
     width: 15em;
 }
+body > div > div.container > div > a > img{
+    height: 15em;
+    
+}
+
 a.logo{
     margin-left: 10px;
 }
@@ -119,7 +170,7 @@ a.departement-informatique{
     margin-left: 5em;
 }
 a.tropgrand{
-    margin-left: 74%;
+    margin-left: 68%;
     width: auto;
 }
 img.Departement{
@@ -238,10 +289,12 @@ li.Navigation:hover {
 
 /* Containers */
 .container, .container2, .container3 {
-    max-width: 1200px;
+    max-width:1700px;
     margin: auto;
     padding: 2em;
+    padding-bottom: 1em;
 }
+
 .container{
     margin-top: 2em;
 }
@@ -260,22 +313,38 @@ li.Navigation:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 1.5em;
 }
+.section3{
+    margin-bottom: 2em;
+}
 
 .section img, .section3 img {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
-
+body > div > div.container > div{
+    height: 15em;
+}
+body > div > div.container2 > div{
+    height: 15.5em;
+}
+body > div > div.container3 > div{
+    height: 15em;
+}
 .section img:hover, .section3 img:hover {
     transform: scale(1.05);
 }
 
 /* Texte */
+
 .texte, .texte2, .texte3 {
-    margin-left: 2em;
+    font-size: larger;
+    padding-left:5em;
     color: var(--accent-color);
 }
 
+.texte3{
+    padding-left:5em;
+}
 /* Améliorations typographiques */
 h1 {
     color: var(--primary-color);
